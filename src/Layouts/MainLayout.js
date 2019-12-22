@@ -13,11 +13,13 @@ export default props => {
 
 const Header = props => {
   return (
-    <header>
-      <Link to="/">
-        <h2>INVENTORY</h2>
-      </Link>
-      <div>
+    <header className="hcontainer">
+      <div className="left">
+        <Link to="/">
+          <h2>INVENTORY</h2>
+        </Link>
+      </div>
+      <div className="right">
         <ul>
           <li>
             <Link to="/">Home</Link>

@@ -2,15 +2,24 @@
   font-family: "Roboto", sans-serif;
   background: #5cdb95;
   color: #edf5e1;
+  padding: 3px 3px;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
+.hcontainer {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
   height: 40px;
-  padding: 5px 10px;
 }
-
+.left {
+  display: grid;
+  grid-column-start: 1;
+  align-self: start;
+}
+.right {
+  grid-column-start: 3;
+  display: grid;
+  align-self: center;
+}
 header ul {
   list-style-type: none;
   margin: 0;
@@ -39,7 +48,9 @@ header a {
 }
 header h2 {
   color: #05386b;
+  margin: 0;
 }
 header a:active,
 header a:focus {
   outline: none;
+}
